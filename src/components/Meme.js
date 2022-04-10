@@ -1,13 +1,21 @@
+import memesData from "../memesData";
+
 export default function Meme() {
+  function getMemeImage() {
+    const memesArray = memesData.data.memes;
+    const randomNumber = Math.floor(Math.random() * memesArray.length);
+    const url = memesArray[randomNumber].url;
+    console.log(url);
+  }
   return (
     <main>
-      <form className="meme-block" action="">
+      <div className="meme-block" action="">
         <input type="text" className="input-1" placeholder="Top text" />
         <input type="text" className="input-2" placeholder="Bottom text" />
-        <button type="submit" className="submit-btn">
+        <button onClick={getMemeImage} type="submit" className="submit-btn">
           Get a new meme image
         </button>
-      </form>
+      </div>
     </main>
   );
 }
