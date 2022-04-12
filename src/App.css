@@ -43,10 +43,10 @@ main {
 }
 .meme-block {
   display: grid;
-  padding: 15rem 0;
+  padding: 10rem 0;
   grid-template-columns: repeat(2, 1fr);
-  gap: 6rem 3rem;
-  min-width: 50vw;
+  gap: 6rem 30rem;
+  /* min-width: 50vw; */
 }
 
 input {
@@ -64,11 +64,11 @@ input {
   grid-column: 1/2;
 }
 .input-2 {
-  grid-column: 2/3;
+  grid-column: 1/2;
 }
 
 .submit-btn {
-  grid-column: 1/-1;
+  grid-column: 1/2;
   border-width: 0;
   height: 5rem;
   color: #f5f5f5;
@@ -78,4 +78,12 @@ input {
   background-color: #f05454;
   border-radius: 2.5rem;
   cursor: pointer;
+}
+
+.meme-image {
+  width: 35rem;
+   margin: 0 auto;
+   grid-column:2/3 ;
+   grid-row: 1/5;
+   align-self: center;
 }
