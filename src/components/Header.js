@@ -1,12 +1,12 @@
-import Logo from "../assets/troll-face.png";
+import React from "react";
+import logo from "../images/troll-face.png";
 
-export default function Headers() {
+export default function Header() {
   return (
-    <nav className="navbar">
-      <div className="logo-block">
-        <img className="logo" src={Logo} alt="logo" />
-        <h2 className="logo-text">Meme Generator</h2>
-      </div>
-    </nav>
+    <header className="header">
+      <img src={logo} className="header--image" alt="logo" />
+      <h2 className="header--title">Meme Generator</h2>
+      <h4 className="header--project">React Course - Project 3</h4>
+    </header>
   );
 }
